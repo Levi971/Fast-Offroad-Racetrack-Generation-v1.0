@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://dgmd5l3jhfijk"]
+
+[ext_resource type="Shader" path="res://Creator_Map/Shader/Height_N_Slope_Rework.gdshader" id="1_5w3hk"]
+[ext_resource type="Texture2D" uid="uid://b8k86kykufc7x" path="res://Creator_Map/Copie_Image/Carte.png" id="2_gjxce"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4rivj"]
+render_priority = 0
+shader = ExtResource("1_5w3hk")
+shader_parameter/Show_True_Color = null
+shader_parameter/offset = null
+shader_parameter/fade = null
+shader_parameter/Black_Flat = Color(0.02, 0.45, 0.8, 1)
+shader_parameter/Black_Slope = Color(0.02, 0.45, 0.8, 1)
+shader_parameter/Black_Track = Color(0.02, 0.45, 0.8, 1)
+shader_parameter/Red_Flat = Color(0.458824, 0.67451, 0, 1)
+shader_parameter/Red_Slope = Color(0.02, 0.45, 0.8, 1)
+shader_parameter/Red_Track = Color(0.02, 0.45, 0.8, 1)
+shader_parameter/Green_Flat = Color(0.02, 0.45, 0.8, 1)
+shader_parameter/Green_Slope = Color(0.02, 0.45, 0.8, 1)
+shader_parameter/Green_Track = Color(0.02, 0.45, 0.8, 1)
+shader_parameter/Blue_Flat = Color(0.623529, 0.32549, 0.533333, 1)
+shader_parameter/Blue_Slope = Color(0.02, 0.45, 0.8, 1)
+shader_parameter/Blue_Track = Color(0.02, 0.45, 0.8, 1)
+shader_parameter/Carte = ExtResource("2_gjxce")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_mndgk"]
+
+[node name="Test_Shader" type="MeshInstance3D"]
+material_override = SubResource("ShaderMaterial_4rivj")
+mesh = SubResource("PlaneMesh_mndgk")
