@@ -1,19 +1,5 @@
-# Godot Orbit Camera
+# (Not Totally) Optimized Proceduraly Generated Offroad Track 
 
-This plugin adds an OrbitCamera node in the Godot Editor.
+It's just a project that I started yesterday, even if in reality, I started working on the creation of procedural routes much longer ago, now, I'm looking to optimize the algorithm in question to make it more quick, I tried to make it work from the editor, but I don't know why but it doesn't work very well, so to follow...
 
-# Usage
-
-## In the Editor
-1. Enable OrbitCamera plugin in Project Settings > Plugins
-2. Add Node3D node (used for rotating the camera) into current scene
-3. Add OrbitCamera as a child of the Node3D node
-4. Set *Anchor Node* property of OrbitCamera to the Node3D node
-
-## Controls (Mouse)
-- Hold Left Mouse Button to orbit around the *Anchor Node*
-- Mouse scroll wheel to change the distance to *Anchor Node*
-
-## Controls (Touch)
-- Single touch drag to orbit around the *Anchor Node*
-- Pinch gesture to change the distance to *Anchor Node*
+And yes, since I have already been working for quite some time with other projects, there is a lot of copy and paste in the code, but I will make the code more compact and easy to follow later.
